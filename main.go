@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"free-go/leetcode"
 	"log"
 	"net/http"
 	"strings"
@@ -17,7 +18,7 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("key:", k)
 		fmt.Println("val:", strings.Join(v, ""))
 	}
-	fmt.Fprintf(w, "Hello astaxie!") // 这个写入到 w 的是输出到客户端的
+	fmt.Fprintf(w, "两数之和: %v\n", leetcode.TwoSum([]int{2, 7, 11, 15}, 9)) // 这个写入到 w 的是输出到客户端的
 }
 
 func main() {
