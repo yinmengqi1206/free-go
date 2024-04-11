@@ -1,5 +1,6 @@
 package main
 
+// 因为go语言有自动格式化和优化导包，所以没有使用的包，保存会被自动删除
 import (
 	"fmt"
 	"free-go/leetcode"
